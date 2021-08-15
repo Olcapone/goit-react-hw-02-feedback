@@ -1,7 +1,22 @@
+body {
+  background-color: #ebf4f3;
+}
+
 .section {
   width: 400px;
+  margin-left: 20px;
+  margin-top: 20px;
+  padding-bottom: 20px;
+
+  background-color: #fff;
+  border-radius: 4px;
 }
 
 .title {
+  margin: 0;
+  padding: 10px;
   background-color: #12ba9e;
+  color: #fff;
+  font-size: 32px;
+  text-align: center;
 }

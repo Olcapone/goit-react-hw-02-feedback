@@ -1,0 +1,27 @@
+.list {
+  padding-left: 20px;
+}
+
+.title {
+  padding-top: 20px;
+  text-align: center;
+  color: #12ba9e;
+  font-size: 32px;
+}
+
+.items {
+  color: #50958d;
+  font-size: 24px;
+}
+
+.items:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.goodStats {
+  color: #12ba9e;
+}
+
+.badStats {
+  color: #f44034;
+}

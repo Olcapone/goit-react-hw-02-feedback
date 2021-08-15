@@ -1,18 +1,25 @@
 import React from "react";
+import s from "./FeedbackOptions.module.css";
 
 const FeedbackOptions = ({ options }) => {
   const { clickGood, clickNeutral, clickBad } = options;
 
   return (
-    <ul>
-      <li>
-        <button onClick={clickGood}>Good</button>
+    <ul className={s.list}>
+      <li className={s.item}>
+        <button className={s.button} onClick={clickGood}>
+          Good
+        </button>
       </li>
-      <li>
-        <button onClick={clickNeutral}>Neutral</button>
+      <li className={s.item}>
+        <button className={s.button} onClick={clickNeutral}>
+          Neutral
+        </button>
       </li>
-      <li>
-        <button onClick={clickBad}>Bad</button>
+      <li className={s.item}>
+        <button className={s.button} onClick={clickBad}>
+          Bad
+        </button>
       </li>
     </ul>
   );
