@@ -65,7 +65,7 @@ class App extends Component {
           <FeedbackOptions options={this} onLeaveFeedback={this.state} />
         </Section>
 
-        <Section>
+        <Section title="Statistics">
           <Statistics
             good={good}
             neutral={neutral}

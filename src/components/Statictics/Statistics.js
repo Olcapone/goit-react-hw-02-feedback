@@ -4,8 +4,6 @@ import Notification from "../Notification/Notification";
 
 const Statistics = ({ good, neutral, bad, total, positivePercentage }) => (
   <Fragment>
-    <h2 className={s.title}>Statistics</h2>
-
     {total >= 1 ? (
       <ul className={s.list}>
         <li className={s.items}>
