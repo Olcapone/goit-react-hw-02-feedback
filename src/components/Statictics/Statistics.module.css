@@ -1,5 +1,5 @@
 .list {
-  padding-left: 20px;
+  padding-left: 40px;
 }
 
 .title {
@@ -10,6 +10,10 @@
 }
 
 .items {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 40px;
+
   color: #50958d;
   font-size: 24px;
 }

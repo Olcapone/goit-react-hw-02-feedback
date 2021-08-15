@@ -65,17 +65,15 @@ class App extends Component {
           <FeedbackOptions options={this} onLeaveFeedback={this.state} />
         </Section>
 
-        {this.countTotalFeedback() >= 1 && (
-          <Section>
-            <Statistics
-              good={good}
-              neutral={neutral}
-              bad={bad}
-              total={this.countTotalFeedback()}
-              positivePercentage={this.countPositiveFeedbackPercentage()}
-            />
-          </Section>
-        )}
+        <Section>
+          <Statistics
+            good={good}
+            neutral={neutral}
+            bad={bad}
+            total={this.countTotalFeedback()}
+            positivePercentage={this.countPositiveFeedbackPercentage()}
+          />
+        </Section>
       </>
     );
   }
