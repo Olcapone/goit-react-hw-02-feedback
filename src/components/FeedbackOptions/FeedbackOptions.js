@@ -24,5 +24,4 @@ const FeedbackOptions = ({ options }) => {
     </ul>
   );
 };
-
 export default FeedbackOptions;
