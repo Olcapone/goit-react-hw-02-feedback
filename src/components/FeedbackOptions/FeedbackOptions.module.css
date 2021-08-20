@@ -20,7 +20,7 @@ button {
 }
 
 .button {
-  background-color: #12ba9e; /* Green */
+  background-color: #0c86ef; /* Green */
   border: none;
   border-radius: 4px;
   color: white;
@@ -33,9 +33,5 @@ button {
 }
 
 .button:hover {
-  background-color: #4d9990;
-}
-
-.button:active {
-  background-color: #4d9990;
+  background-color: #568dba;
 }

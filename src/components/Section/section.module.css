@@ -1,5 +1,5 @@
 body {
-  background-color: #ebf4f3;
+  background-color: #f0f2f5;
 }
 
 .section {
@@ -9,14 +9,14 @@ body {
   padding-bottom: 20px;
 
   background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
   border-radius: 4px;
 }
 
 .title {
   margin: 0;
   padding: 10px;
-  background-color: #12ba9e;
-  color: #fff;
+  color: #8d949e;
   font-size: 32px;
   text-align: center;
 }

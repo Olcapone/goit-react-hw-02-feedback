@@ -24,26 +24,12 @@ class App extends Component {
     bad: this.props.initialBad,
   };
 
-  clickGood = () => {
-    this.setState((prevState) => {
-      return {
-        good: prevState.good + 1,
-      };
-    });
-  };
+  onLeaveFeedback = (e) => {
+    const name = e.currentTarget.textContent;
 
-  clickNeutral = () => {
     this.setState((prevState) => {
       return {
-        neutral: prevState.neutral + 1,
-      };
-    });
-  };
-
-  clickBad = () => {
-    this.setState((prevState) => {
-      return {
-        bad: prevState.bad + 1,
+        [name]: prevState[name] + 1,
       };
     });
   };
@@ -62,7 +48,10 @@ class App extends Component {
     return (
       <>
         <Section title="Please leave feedback">
-          <FeedbackOptions options={this} onLeaveFeedback={this.state} />
+          <FeedbackOptions
+            options={this.state}
+            onLeaveFeedback={this.onLeaveFeedback}
+          />
         </Section>
 
         <Section title="Statistics">
